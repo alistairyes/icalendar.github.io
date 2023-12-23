@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Schedule Creator</title>
+</head>
+<body>
+    <h1>Course Schedule Creator</h1>
+    <form id="courseForm">
+        <input type="text" id="name" placeholder="Course Name" required><br>
+        <input type="text" id="instructor" placeholder="Instructor" required><br>
+        <input type="text" id="location" placeholder="Location" required><br>
+        <input type="date" id="start_date" required><br>
+        <input type="date" id="end_date" required><br>
+        <input type="time" id="class_time_start" required><br>
+        <input type="time" id="class_time_end" required><br>
+        <input type="checkbox" id="monday" value="MO">Monday<br>
+        <input type="checkbox" id="tuesday" value="TU">Tuesday<br>
+        <!-- Add checkboxes for other weekdays -->
+        <button type="submit">Create Calendar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
