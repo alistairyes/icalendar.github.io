@@ -1,0 +1,184 @@
+{
+    "Title": [
+        {
+            "crn": "CRN",
+            "time": "Time",
+            "instructor": "Instructor",
+            "location": "Location",
+            "days": "Days"
+        }
+    ],
+    "AI Algorithms and Mathematics": [
+        {
+            "crn": "20863",
+            "time": "05:00 pm-08:50 pm",
+            "instructor": "Muhammad Sultan (P)",
+            "location": "BA_K 324",
+            "days": "W"
+        },
+        {
+            "crn": "20864",
+            "time": "06:00 pm-09:50 pm",
+            "instructor": "Muhammad Sultan (P)",
+            "location": "BA_M 134",
+            "days": "R"
+        }
+    ],
+    "Conversational AI": [
+        {
+            "crn": "20865",
+            "time": "01:00 pm-03:50 pm",
+            "instructor": "Touraj Bani Rostam (P)",
+            "location": "BA_E 208",
+            "days": "T"
+        },
+        {
+            "crn": "20866",
+            "time": "08:00 am-10:50 am",
+            "instructor": "Touraj Bani Rostam (P)",
+            "location": "BA_M 132",
+            "days": "T"
+        }
+    ],
+    "Machine Learning Programming": [
+        {
+            "crn": "20867",
+            "time": "09:00 am-11:50 am",
+            "instructor": "Garima Malik (P)",
+            "location": "BA_N 202",
+            "days": "F"
+        },
+        {
+            "crn": "20868",
+            "time": "01:00 pm-03:50 pm",
+            "instructor": "Garima Malik (P)",
+            "location": "BA_N 202",
+            "days": "F"
+        }
+    ],
+    "Machine Learning Frameworks": [
+        {
+            "crn": "20869",
+            "time": "01:00 pm-01:50 pm",
+            "instructor": "Archit Garg (P)",
+            "location": "BA_O LINE",
+            "days": "M"
+        },
+        {
+            "crn": "20870",
+            "time": "12:00 pm-12:50 pm",
+            "instructor": "Archit Garg (P)",
+            "location": "BA_O LINE",
+            "days": "M"
+        }
+    ],
+    "Issues and Challenges in AI": [
+        {
+            "crn": "20871",
+            "time": "03:00 pm-05:50 pm",
+            "instructor": "Ross Bigelow (P)",
+            "location": "BA_N 104",
+            "days": "M"
+        },
+        {
+            "crn": "20872",
+            "time": "06:00 pm-08:50 pm",
+            "instructor": "Ross Bigelow (P)",
+            "location": "BA_N 104",
+            "days": "M"
+        }
+    ],
+    "AI for Decision Making": [
+        {
+            "crn": "20873",
+            "time": "07:00 pm-09:50 pm",
+            "instructor": "Sneha Fnu (P)",
+            "location": "BA_K 218",
+            "days": "T"
+        }
+    ],
+    "AI Infrastructure and Arch.": [
+        {
+            "crn": "20875",
+            "time": "05:00 pm-07:50 pm",
+            "instructor": "Caio Alexandre Gasparine (P)",
+            "location": "BA_N 202",
+            "days": "W"
+        }
+    ],
+    "Vision Systems": [
+        {
+            "crn": "20877",
+            "time": "12:00 pm-02:50 pm",
+            "instructor": "Sneha Fnu (P)",
+            "location": "BA_M 134",
+            "days": "F"
+        },
+        {
+            "crn": "20878",
+            "time": "08:00 am-10:50 am",
+            "instructor": "Sneha Fnu (P)",
+            "location": "BA_M 132",
+            "days": "F"
+        }
+    ],
+    "Reinforcement Learning Prog": [
+        {
+            "crn": "20879",
+            "time": "05:00 pm-07:50 pm",
+            "instructor": "Masood Khan Patel (P)",
+            "location": "BA_K 320",
+            "days": "M"
+        },
+        {
+            "crn": "20880",
+            "time": "08:00 am-10:50 am",
+            "instructor": "Masood Khan Patel (P)",
+            "location": "BA_N 102",
+            "days": "R"
+        }
+    ],
+    "Neural Networks": [
+        {
+            "crn": "20881",
+            "time": "11:00 am-11:50 am",
+            "instructor": "Archit Garg (P)",
+            "location": "BA_O LINE",
+            "days": "T"
+        }
+    ],
+    "Emerging AI Technologies": [
+        {
+            "crn": "20884",
+            "time": "07:00 pm-09:50 pm",
+            "instructor": "Jahanzeb Abbas (P)",
+            "location": "BA_O LINE",
+            "days": "M"
+        }
+    ],
+    "AI Project": [
+        {
+            "crn": "20885",
+            "time": "05:00 pm-08:50 pm",
+            "instructor": "Sanjeev Kumar (P)",
+            "location": "BA_E 208",
+            "days": "T"
+        },
+        {
+            "crn": "20886",
+            "time": "05:00 pm-08:50 pm",
+            "instructor": "Sanjeev Kumar (P)",
+            "location": "BA_E 208",
+            "days": "W"
+        }
+    ],
+    "AI Robotics and Automation": [
+        {
+            "crn": "20887",
+            "time": "10:00 am-12:50 pm",
+            "instructor": "Alireza Ghaffari (P)",
+            "location": "BA_K 326",
+            "days": "W"
+        }
+    ]
+}
