@@ -8,10 +8,54 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">iCalendar Event Creator</h1>
-        <!-- Form for event details -->
+        <h1 class="text-center mb-4">iCalendar Course Scheduler</h1>
+
+        <!-- Event Form -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Add Course</h5>
+                <form id="eventForm">
+                    <!-- Form fields for course details -->
+                    <div class="form-group">
+                        <label>Course Name</label>
+                        <input type="text" class="form-control" id="courseName">
+                    </div>
+                    <!-- Additional fields for time, days, etc. -->
+                    <button type="submit" class="btn btn-primary">Add Course</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Global Schedule Settings -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Schedule Settings</h5>
+                <form id="globalSettings">
+                    <div class="form-group">
+                        <label>Start Date</label>
+                        <input type="date" class="form-control" id="startDate">
+                    </div>
+                    <div class="form-group">
+                        <label>End Date</label>
+                        <input type="date" class="form-control" id="endDate">
+                    </div>
+                    <button type="button" id="applySettings" class="btn btn-secondary">Apply to All Courses</button>
+                </form>
+            </div>
+        </div>
+
         <!-- Event List -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Your Courses</h5>
+                <ul id="eventList" class="list-group">
+                    <!-- List of courses will be dynamically added here -->
+                </ul>
+                <button type="button" id="generateICS" class="btn btn-success mt-3">Generate iCalendar File</button>
+            </div>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
