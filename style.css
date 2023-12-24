@@ -1,0 +1,41 @@
+.selected-courses-box {
+  margin-bottom: 20px;
+}
+.selected-courses-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+.selected-courses-box li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+Copy code
+.summary-window {
+  margin-bottom: 20px;
+}
+.summary-window table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.summary-window th, .summary-window td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+.summary-window th {
+  background-color: #f0f0f0;
+}
+.global-settings {
+  margin-bottom: 20px;
+}
+.global-settings div {
+  margin-bottom: 10px;
+}
+.ical-generation {
+  margin-top: 20px;
+  text-align: center;
+}
+.file-upload {
+  margin-bottom: 20px;
+}
