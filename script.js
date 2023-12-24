@@ -1,9 +1,19 @@
 fetch('courses.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(coursesData => {
         populateCourseDropdown(coursesData);
     })
-    .catch(error => console.error('Error loading course data:', error));
+    .catch(error => {
+        console.error('Error loading course data:', error);
+        // Display an error message to the user
+        displayErrorMessage('Failed to load course data. Please try again later.');
+    });
+
 
 function populateCourseDropdown(coursesData) {
     const courseDropdown = document.getElementById('courseDropdown');
@@ -48,9 +58,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const eventList = document.getElementById('eventList');
     const generateICSButton = document.getElementById('generateICS');
 
-    eventForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const courseName = document.getElementById('courseName').value;
+   eventForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    // Example: Validating course name
+    const courseName = document.getElementById('courseName').value;
+    if (!courseName) {
+        displayErrorMessage('Please enter a course name.');
+        return;
+    }
         // Add other fields as needed
 
         const newCourse = {
@@ -89,7 +104,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function generateICS(courses) {
-    let icsContent = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Your App//EN\n';
+    try {
+        let icsContent = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Your App//EN\n';
+
 
     courses.forEach(course => {
         const startDate = formatDateToICS(course.startDate);
@@ -111,6 +128,10 @@ document.addEventListener('DOMContentLoaded', function () {
     link.href = URL.createObjectURL(blob);
     link.download = 'schedule.ics';
     link.click();
+ catch (error) {
+    console.error('Error generating ICS file:', error);
+    displayErrorMessage('Failed to generate ICS file. Please try again.');
+}
 }
 
 function formatDateToICS(dateString) {
