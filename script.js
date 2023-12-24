@@ -46,7 +46,33 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function generateICS(courses) {
-        // Generate the ics file content based on the courses
-        // This function needs to be implemented
-    }
+    let icsContent = 'BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Your App//EN\n';
+
+    courses.forEach(course => {
+        const startDate = formatDateToICS(course.startDate);
+        const endDate = formatDateToICS(course.endDate);
+
+        icsContent += 'BEGIN:VEVENT\n';
+        icsContent += `SUMMARY:${course.name}\n`;
+        icsContent += `DTSTART;VALUE=DATE:${startDate}\n`;
+        icsContent += `DTEND;VALUE=DATE:${endDate}\n`;
+        icsContent += 'RRULE:FREQ=WEEKLY\n'; // Assuming weekly repetition
+        // Add other iCalendar fields as necessary
+        icsContent += 'END:VEVENT\n';
+    });
+
+    icsContent += 'END:VCALENDAR';
+
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'schedule.ics';
+    link.click();
+}
+
+function formatDateToICS(dateString) {
+    // Convert date from 'YYYY-MM-DD' to 'YYYYMMDD' format for iCalendar
+    return dateString.replace(/-/g, '');
+}
+
 });
