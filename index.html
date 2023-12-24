@@ -10,17 +10,19 @@
     <div class="container mt-5">
         <h1 class="text-center mb-4">iCalendar Course Scheduler</h1>
 
-        <!-- Event Form -->
+        <!-- Course Selection Form -->
         <div class="card mb-4">
             <div class="card-body">
-                <h5 class="card-title">Add Course</h5>
-                <form id="eventForm">
-                    <!-- Form fields for course details -->
+                <h5 class="card-title">Select Course</h5>
+                <form id="courseSelectionForm">
                     <div class="form-group">
-                        <label>Course Name</label>
-                        <input type="text" class="form-control" id="courseName">
+                        <label for="courseDropdown">Course Title</label>
+                        <select class="form-control" id="courseDropdown"></select>
                     </div>
-                    <!-- Additional fields for time, days, etc. -->
+                    <div class="form-group">
+                        <label for="timeSlotDropdown">Time Slot</label>
+                        <select class="form-control" id="timeSlotDropdown"></select>
+                    </div>
                     <button type="submit" class="btn btn-primary">Add Course</button>
                 </form>
             </div>
