@@ -95,8 +95,8 @@
             "instructor": "Sneha Fnu (P)",
             "location": "BA_K 218",
             "days": "T"
-        },    
-    
+        }
+    ],
     "AI Infrastructure and Arch.": [
         {
             "crn": "20875",
@@ -181,4 +181,4 @@
             "days": "W"
         }
     ]
-
+}
