@@ -1,3 +1,55 @@
+fetch('courses.json')
+    .then(response => response.json())
+    .then(coursesData => {
+        // Use coursesData to populate UI
+    })
+    .catch(error => console.error('Error loading course data:', error));
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Structured course data (abbreviated for brevity)
+    const coursesData = {
+        "AI Algorithms and Mathematics": [
+            { crn: 20863, time: "05:00 pm-08:50 pm", instructor: "Muhammad Sultan", location: "BA_K 324", days: "W" },
+            { crn: 20864, time: "06:00 pm-09:50 pm", instructor: "Muhammad Sultan", location: "BA_M 134", days: "R" },
+            // ... other time slots ...
+        ],
+        // ... other courses ...
+    };
+
+    // Reference to DOM elements
+    const courseDropdown = document.getElementById('courseDropdown');
+    const timeSlotDropdown = document.getElementById('timeSlotDropdown');
+
+    // Populate course dropdown
+    for (let course in coursesData) {
+        let option = document.createElement('option');
+        option.value = course;
+        option.textContent = course;
+        courseDropdown.appendChild(option);
+    }
+
+    // Handle course selection change
+    courseDropdown.addEventListener('change', function () {
+        populateTimeSlots(this.value);
+    });
+
+    // Populate time slots for selected course
+    function populateTimeSlots(courseTitle) {
+        const timeSlots = coursesData[courseTitle];
+        timeSlotDropdown.innerHTML = '';
+        timeSlots.forEach(slot => {
+            let option = document.createElement('option');
+            option.value = JSON.stringify(slot); // Stringify to store the entire object
+            option.textContent = `${slot.days} ${slot.time} - ${slot.instructor}`;
+            timeSlotDropdown.appendChild(option);
+        });
+    }
+
+    // Initial population of time slots
+    if (courseDropdown.options.length > 0) {
+        populateTimeSlots(courseDropdown.options[courseDropdown.selectedIndex].value);
+    }
+
 document.addEventListener('DOMContentLoaded', function () {
     const courses = [];
     const eventForm = document.getElementById('eventForm');
