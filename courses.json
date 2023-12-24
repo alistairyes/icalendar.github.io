@@ -1,0 +1,23 @@
+[
+    {
+        "title": "AI Algorithms and Mathematics",
+        "sections": [
+            {
+                "crn": 20863,
+                "time": "05:00 pm-08:50 pm",
+                "instructor": "Muhammad Sultan",
+                "location": "BA_K 324",
+                "days": "W"
+            },
+            {
+                "crn": 20864,
+                "time": "06:00 pm-09:50 pm",
+                "instructor": "Muhammad Sultan",
+                "location": "BA_M 134",
+                "days": "R"
+            }
+            // ... More sections ...
+        ]
+    },
+    // ... More courses ...
+]
