@@ -2,7 +2,7 @@
 // Function to load JSON data from a file
 async function loadJSONFromFile() {
     try {
-        const response = await fetch('your-json-file.json'); // Replace 'your-json-file.json' with the actual file path.
+        const response = await fetch('courses.json'); // Replace 'your-json-file.json' with the actual file path.
         if (!response.ok) {
             throw new Error('Failed to load JSON data.');
         }
